@@ -157,13 +157,24 @@ def notifier(titre, message, url=None, priorite="urgent", tags="video_game",
     }
     if url:
         entetes["Click"] = url
+
+    # 1) notification sur le téléphone (appli ntfy)
+    envoyer_ntfy(entetes, message, "notification")
+    # 2) e-mail, envoyé à part pour qu'un refus n'empêche pas la notification
     if email and ALERT_EMAIL:
-        entetes["Email"] = ALERT_EMAIL   # ntfy transfère aussi par e-mail
+        envoyer_ntfy(dict(entetes, Email=ALERT_EMAIL), message, "e-mail")
+
+
+def envoyer_ntfy(entetes, message, quoi):
     try:
-        requests.post(f"https://ntfy.sh/{NTFY_TOPIC}",
-                      data=message.encode("utf-8"), headers=entetes, timeout=15)
+        r = requests.post(f"https://ntfy.sh/{NTFY_TOPIC}",
+                          data=message.encode("utf-8"), headers=entetes, timeout=15)
+        if r.ok:
+            print(f"  ntfy ({quoi}) : OK")
+        else:
+            print(f"  ntfy ({quoi}) : ÉCHEC HTTP {r.status_code} -> {r.text[:300]}")
     except requests.RequestException as e:
-        print(f"  Échec de la notification : {e}")
+        print(f"  ntfy ({quoi}) : erreur réseau {e}")
 
 
 def main():
@@ -179,7 +190,7 @@ def main():
                  "PS5 Pro sera en stock sous " f"{cfg['prix_max']} €.",
                  priorite="default", tags="white_check_mark", email=True)
         envoyer_sms("Test alerte PS5 Pro : les SMS fonctionnent !")
-        print("Notification de test envoyée.")
+        print(f"Test envoyé vers le sujet ntfy « {NTFY_TOPIC} ».")
 
     if maintenant.date() > date.fromisoformat(cfg["date_fin"]):
         print("Période de surveillance terminée. Rien à faire.")
