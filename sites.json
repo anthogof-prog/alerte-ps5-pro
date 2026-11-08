@@ -1,0 +1,16 @@
+{
+  "prix_max": 1000,
+  "date_fin": "2026-11-22",
+  "sites": [
+    { "nom": "Fnac", "url": "https://www.fnac.com/Console-Sony-PS5-Pro-Blanc-et-Noir/a20901133/w-4" },
+    { "nom": "Darty", "url": "" },
+    { "nom": "Carrefour", "url": "" },
+    { "nom": "Leclerc", "url": "" },
+    { "nom": "Cdiscount", "url": "" },
+    { "nom": "Micromania", "url": "" },
+    { "nom": "Boulanger", "url": "" },
+    { "nom": "Auchan", "url": "" },
+    { "nom": "Amazon", "url": "" },
+    { "nom": "PlayStation Direct", "url": "" }
+  ]
+}
