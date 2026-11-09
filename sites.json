@@ -3,14 +3,14 @@
   "date_fin": "2026-11-22",
   "sites": [
     { "nom": "Fnac", "url": "https://www.fnac.com/Console-Sony-PS5-Pro-Blanc-et-Noir/a20901133/w-4" },
-    { "nom": "Darty", "url": "" },
-    { "nom": "Carrefour", "url": "" },
-    { "nom": "Leclerc", "url": "" },
-    { "nom": "Cdiscount", "url": "" },
+    { "nom": "Darty", "url": "https://www.darty.com/nav/achat/console_jeux/univers_ps5/console_ps5/sony_ps5_pro.html" },
+    { "nom": "Carrefour", "url": "https://www.carrefour.fr/p/console-ps5-pro-2-tb-sony-0711719024040" },
+    { "nom": "Leclerc", "url": "https://www.e.leclerc/fp/console-playstation-5-edition-pro-2tb-ps5-0711719024040" },
+    { "nom": "Cdiscount", "url": "https://www.cdiscount.com/jeux-pc-video-console/ps5/console-playstation-5-pro/f-1035001-ps5prov2.html#mpos=17|mp" },
     { "nom": "Micromania", "url": "" },
-    { "nom": "Boulanger", "url": "" },
-    { "nom": "Auchan", "url": "" },
-    { "nom": "Amazon", "url": "" },
+    { "nom": "Boulanger", "url": "https://www.boulanger.com/ref/1230556" },
+    { "nom": "Auchan", "url": "https://www.auchan.fr/sony-console-playstation-5-pro/pr-C1824137" },
+    { "nom": "Amazon", "url": "https://www.amazon.fr/Playstation-Sony-Manette-DualSense-Couleur/dp/B0FRYBZR91/ref=sr_1_1_mod_primary_new?dib=eyJ2IjoiMSJ9.0L3rdhC0EknTPA--OtRdY36VCLalxNM-UW02z4avLW2HBvTDVi-dOewNVwEA8F4m7pPctXt0cwlqHRbVeTVmiSzNzoFo_AEFhOqnPhR8UBtj8XoEHknk_mxL_i4zajP9DRQjmEJG8IDgRd64YhCpJE68EAEGvnSt_Yi1oPtu1o7I4clFucIwVwMswcrs3SliRVfFghcaRhZO48UACAnGVCR5vNbr8pg5LHvDEVx1P8E2frO5PsKF2cUlLONsfYKbO6ToB_19CL4UVsa3R38cxus0zFkyfaXCCBhHLOwrP6s.Fvwe5FZkRsdj9S1r2eXGM0rJ8Po-w2vYWQdhda7HHnc&dib_tag=se&keywords=ps5%2Bpro&qid=1794218210&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-1&th=1" },
     { "nom": "PlayStation Direct", "url": "" }
   ]
 }
